@@ -37,7 +37,7 @@
 		<h3> ${(number1 + number2) / 2 } </h3>
 	</c:if>
 	
-	<h1>JSTL core if</h1>
+	<h1>5. JSTL core if</h1>
 	
 	<c:if test="${number1 * number2 > 100 }">
 		<script> alert("너무 큰 수 입니다.")</script>
