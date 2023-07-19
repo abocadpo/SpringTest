@@ -2,9 +2,12 @@ package com.abocado.test.jstl.domain;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class WeatherHistory {
 	
-	private String date;
+	@DateTimeFormat(pattern="yyyy년 MM월 dd일")
+	private Date date;
 	private String weather;
 	private double temperatures;
 	private double precipitation;
@@ -13,10 +16,11 @@ public class WeatherHistory {
 	private Date createdAt;
 	private Date updatedAt;
 	
-	public String getDate() {
+	
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 	public String getWeather() {

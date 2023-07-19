@@ -46,7 +46,6 @@
 						<tr>
 							<td>
 								<fmt:formatDate var="date" value="${weather.date }" pattern="yyyy년mm월dd일" />
-								${date }
 							</td>
 							<td>
 								<c:if test="${weather.weather eq '비' }">

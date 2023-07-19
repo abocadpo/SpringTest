@@ -20,5 +20,22 @@ public class WeatherHistoryService {
 
 		return weatherHistory; 
 	}
+	
+	public int addWeather(
+		String date
+		, String weather
+		, double temperatures
+		, double precipitation
+		, String microDust
+		, double windSpeed) {
+		
+	int count = weatherHistoryRepository.insertWeather(date, weather, temperatures, precipitation, microDust, windSpeed);
+	return count;	
+	}
+	
+//	public int addWeatherByObject(WeatherHistory weatherHistory) {
+//		int count = 
+//				return count;
+	
 
 }
