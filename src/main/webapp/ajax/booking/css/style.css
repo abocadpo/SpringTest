@@ -1,0 +1,26 @@
+@charset "EUC-KR";
+
+#wrap {
+	width: 1200px;
+	height: 800px;
+	margin:auto;
+	
+}
+
+header {
+	height: 120px;
+	
+}
+
+.main-menu {
+	height: 80px;
+	background-color: orange;
+}
+
+.contents {
+	height: 520px;
+}
+
+footer {
+	height: 80px;
+}
