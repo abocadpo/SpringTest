@@ -1,4 +1,4 @@
-package com.abocado.test.ajax.favorite;
+package com.abocado.test.ajax;
 
 import java.util.HashMap;
 import java.util.List;

@@ -19,6 +19,13 @@ public interface BookingRepository {
 			, @Param("day") int day
 			, @Param("phoneNumber") String phoneNumber
 			, @Param("headcount") int headcount
+			, @Param("state") String state
 			);
+
+	public int deleteBooking(@Param("id") int id);
+	
+	public Booking selectBooking(
+			@Param("name") String name
+			, @Param("phoneNumber") String phoneNumber);
 	
 }
